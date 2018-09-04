@@ -23,7 +23,7 @@ DEFAULT_PAGINATION = 10
 
 MENUITEMS = (
     ('Portfolio', '/portfolio.html'),
-    ('Download', '/download.html'),
+    ('Install', '/install.html'),
     ('Updates', '/updates.html'),
     ('Community', '/community.html'),
     ('FAQ', '/faq.html'),
