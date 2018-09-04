@@ -57,10 +57,9 @@ sudo dnf install buildstream
 Optionally, install the `buildstream-docs` package to have the BuildStream
 documentation in Devhelp or GNOME Builder.
 
-# Installing from source
+# Alternative install
 
-Until BuildStream is available in [your distro](#install_linux_distro), you will
-need to install it yourself from source.
+Until BuildStream is available in [your distro](#install_linux_distro), you will need to manually install dependencies.
 
 ## Installing dependencies
 
@@ -87,131 +86,9 @@ The default plugins with extra host dependencies are:
 - patch
 - tar
 
-## Arch Linux
+## Install BuildStream
 
-Install the dependencies with:
-
-```
-sudo pacman -S python fuse2 bubblewrap python-pip
-```
-
-For the default plugins:
-
-```
-sudo pacman -S bzr git lzip ostree patch python-gobject
-```
-
-The package *python-arpy* is required by the deb source plugin. This is not
-obtainable via `pacman`, you must get *python-arpy* from AUR:
-(https://aur.archlinux.org/packages/python-arpy/)[https://aur.archlinux.org/packages/python-arpy/]
-
-To install:
-
-```
-wget https://aur.archlinux.org/cgit/aur.git/snapshot/python-arpy.tar.gz
-tar -xvf python-arpy.tar.gz
-cd python-arpy
-makepkg -si
-```
-
-### Debian
-
-Install the dependencies with:
-
-```
-sudo apt-get install \
-    python3 fuse bubblewrap \
-    python3-pip python3-dev
-```
-
-For the default plugins:
-
-#### Stretch
-
-With stretch, you first need to ensure that you have the backports repository
-setup as described [here](https://backports.debian.org/Instructions).
-
-By adding the following line to your sources.list:
-
-```
-deb http://deb.debian.org/debian stretch-backports main
-```
-
-And then running::
-
-```
-sudo apt update
-```
-
-At this point you should be able to get the system requirements for the default plugins with:
-
-```
-sudo apt install \
-    bzr git lzip patch python3-arpy python3-gi
-sudo apt install -t stretch-backports \
-    gir1.2-ostree-1.0 ostree
-```
-
-#### Buster or Sid
-
-For debian unstable or testing, only the following line should be enough
-to get the system requirements for the default plugins installed::
-
-```
-sudo apt-get install \
-    lzip gir1.2-ostree-1.0 git bzr ostree patch python3-arpy python3-gi
-```
-
-### Fedora
-
-For recent fedora systems, the following line should get you the system
-requirements you need:
-
-```
-dnf install -y \
-    python3 fuse bubblewrap \
-    python3-pip python3-devel
-```
-
-For the default plugins:
-
-```
-dnf install -y \
-    bzr git lzip patch ostree python3-gobject
-pip3 install --user arpy
-```
-
-### Ubuntu
-
-#### Ubuntu 18.04 LTS or later
-
-Install the dependencies with:
-
-```
-sudo apt install \
-    python3 fuse bubblewrap \
-    python3-pip python3-dev
-```
-
-For the default plugins:
-
-```
-sudo apt install \
-    bzr gir1.2-ostree-1.0 git lzip ostree patch python3-arpy python3-gi
-```
-
-#### Ubuntu 16.04 LTS
-
-On Ubuntu 16.04, neither [bubblewrap](https://github.com/projectatomic/bubblewrap/)
-or [ostree](https://github.com/ostreedev/ostree) are available in the official repositories.
-You will need to install them in whichever way you see fit. Refer the the upstream documentation
-for advice on this.
-
-
-## Installing
-
-Once you have the base system dependencies, you can install the BuildStream
-python package as a regular user.
+Once you have installed dependencies you can install BuildStream via PyPI or manually from source.
 
 ### Installing from PyPI (recommended)
 
@@ -249,6 +126,129 @@ to the latest recommended version like so:
 ```
 pip install --user --upgrade BuildStream
 ```
+
+### Installing from source
+
+#### Arch Linux
+
+Install the dependencies with:
+
+```
+sudo pacman -S python fuse2 bubblewrap python-pip
+```
+
+For the default plugins:
+
+```
+sudo pacman -S bzr git lzip ostree patch python-gobject
+```
+
+The package *python-arpy* is required by the deb source plugin. This is not
+obtainable via `pacman`, you must get *python-arpy* from AUR:
+(https://aur.archlinux.org/packages/python-arpy/)[https://aur.archlinux.org/packages/python-arpy/]
+
+To install:
+
+```
+wget https://aur.archlinux.org/cgit/aur.git/snapshot/python-arpy.tar.gz
+tar -xvf python-arpy.tar.gz
+cd python-arpy
+makepkg -si
+```
+
+#### Debian
+
+Install the dependencies with:
+
+```
+sudo apt-get install \
+    python3 fuse bubblewrap \
+    python3-pip python3-dev
+```
+
+For the default plugins:
+
+##### Stretch
+
+With stretch, you first need to ensure that you have the backports repository
+setup as described [here](https://backports.debian.org/Instructions).
+
+By adding the following line to your sources.list:
+
+```
+deb http://deb.debian.org/debian stretch-backports main
+```
+
+And then running::
+
+```
+sudo apt update
+```
+
+At this point you should be able to get the system requirements for the default plugins with:
+
+```
+sudo apt install \
+    bzr git lzip patch python3-arpy python3-gi
+sudo apt install -t stretch-backports \
+    gir1.2-ostree-1.0 ostree
+```
+
+##### Buster or Sid
+
+For debian unstable or testing, only the following line should be enough
+to get the system requirements for the default plugins installed::
+
+```
+sudo apt-get install \
+    lzip gir1.2-ostree-1.0 git bzr ostree patch python3-arpy python3-gi
+```
+
+#### Fedora
+
+For recent fedora systems, the following line should get you the system
+requirements you need:
+
+```
+dnf install -y \
+    python3 fuse bubblewrap \
+    python3-pip python3-devel
+```
+
+For the default plugins:
+
+```
+dnf install -y \
+    bzr git lzip patch ostree python3-gobject
+pip3 install --user arpy
+```
+
+#### Ubuntu
+
+##### Ubuntu 18.04 LTS or later
+
+Install the dependencies with:
+
+```
+sudo apt install \
+    python3 fuse bubblewrap \
+    python3-pip python3-dev
+```
+
+For the default plugins:
+
+```
+sudo apt install \
+    bzr gir1.2-ostree-1.0 git lzip ostree patch python3-arpy python3-gi
+```
+
+##### Ubuntu 16.04 LTS
+
+On Ubuntu 16.04, neither [bubblewrap](https://github.com/projectatomic/bubblewrap/)
+or [ostree](https://github.com/ostreedev/ostree) are available in the official repositories.
+You will need to install them in whichever way you see fit. Refer the the upstream documentation
+for advice on this.
+
 
 <a id="install_git_checkout"></a>
 
