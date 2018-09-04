@@ -32,7 +32,17 @@ A.5.- Who is developing BuildStream?
 
 U.1.- I want to give BuildStream a try. Where can I get it?
 
+New users should follow the [installation guide]({filename}installation.md).
+
 U.2.- Which BuildStream version should I try?
+
+New users should get what the [installation guide]({filename}installation.md)
+recommends, which might depends on their platform.
+
+For users requiring the last features, install the latest release
+version from source. For contributors, or those wanting to test coming
+up features, use the last development snapshot. See the [download
+page]({filename}download.md).
 
 U.3.- How do I install BuildStream?
 
