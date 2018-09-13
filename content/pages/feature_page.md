@@ -1,11 +1,11 @@
 title: feature page
 slug: feature
 
-[_TOC_]
+[TOC]
 
 ## Release highlights
 
-BuildStream 1.2 is the second Release delivered by the BuildStream project which incorporates a new CAS artifact cache based on bazel remote APIs. This new feature not just prevent files duplication but also opens the door to have remote execution which will significantly reduces build times. In addition, improved customisation through the tool's configuration file, together with new capabilities to fetch from multiple sources, increase the flexibility of BuildStream. 
+BuildStream 1.2 is the second Release delivered by the BuildStream project which incorporates a new CAS artifact cache based on bazel remote APIs. This new feature not just prevent files duplication but also opens the door to have remote execution which will significantly reduces build times. In addition, improved customisation through the tool's configuration file, together with new capabilities to fetch from multiple sources, increase the flexibility of BuildStream.
 
 Over the last eight months, BuildStream has seen significant improvement, adding several minor features which provide a better onboarding experience to new users while still improving productivity in everyday workflows for application developers and integrators.
 
@@ -110,14 +110,15 @@ For further information about BuildStream check:
 [make]: https://buildstream.gitlab.io/buildstream/elements/make.html
 [deb]: https://buildstream.gitlab.io/buildstream/sources/deb.html
 [filter]: https://buildstream.gitlab.io/buildstream/elements/filter.html
-[download]: https://buildstream.build/releases.html
-[install BuildStream 1.2]: https://buildstream.build/install.html
-[PyPI]: https://buildstream.build/source_install.html#install_pypi
-[Known Issues]: https://buildstream.build/known-issues.html
+[download]: {filename}releases.md
+[install BuildStream 1.2]: {filename}installation.md
+[PyPI]: {filename}source_installation.md#install_pypi
+[Known Issues]: {filename}known_issues.md
 [IRC channel]: irc://irc.gnome.org/#buildstream
 [bug list]: https://gitlab.com/BuildStream/buildstream/boards/580462?=&label_name[]=Bug
 [Community mailing list]: https://mail.gnome.org/mailman/listinfo/buildstream-list
 [Hello World! example]: https://buildstream.gitlab.io/buildstream/tutorial/first-project.html
 [more complex examples]: https://buildstream.gitlab.io/buildstream/using_examples.html
-[BuildStream In Detail]: https://buildstream.build/detail.html
+[BuildStream In Detail]: {filename}buildstream_in_detail.md
 [buildstream]: https://gitlab.com/BuildStream/buildstream
+[FAQ]: {filename}faq.md
