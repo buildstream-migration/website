@@ -61,7 +61,7 @@ New and updated features:
 | [CAS] based artifact cache                  |      | New  | Switched to [CAS] based artifact cache from OSTree based cache                         |
 | [Source Mirroring]                          |      | New  | Added functionality and configuration for providing multiple mirrors for any source.   |
 | [Include directive]                         |      | New  | Elements can now include content from other files.                                     |
-| Add junction support for subprojects        |      |      |                                                                                        |
+| Add junction support for subprojects        |      | New  | Elements can now be configured to depend on elements from other projects               |
 | Workspace incremental builds                |      | New  | Up-to-date files will no longer be rebuilt for workspaced elements.                    |
 | Element and source configuratrion overrides |      | New  | It is now possible to set and override global configuration options for plugins.       |
 | Sanbox configuration                        |      | New  | The user/group ID of sandbox processes can now be set in `project.conf`.               |
@@ -71,12 +71,15 @@ New and updated features:
 
 New an updated software components:
 
-| Component | v 1.0 | v 1.2 |
-|:---------:|:-----:|:-----:|
-|   Python    |  v3.4+ |   v3.5+    |
-|   Component b         |    |    |
-|   Component c         |    |    |
-|   Component d         |    |    |
+| Component   | v 1.0 | v 1.2     |
+|:-----------:|:-----:|:---------:|
+| Python      | v3.4+ | v3.5+     |
+| Bubblewrap  | Any   | v0.1.2+   |
+| ruamel.yaml | Any   | v0.15.51- |
+| blessings   | Any   | Removed   |
+| jinja2      | Any   | v2.10-    |
+| protobuf    | N/A   | v3.5-     |
+| grpcio      | N/A   | v1.10-    |
 
 
 <br/>
