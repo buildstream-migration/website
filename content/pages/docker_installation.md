@@ -4,7 +4,7 @@ slug: docker_install
 If your system cannot provide the base system requirements for BuildStream, then it is possible to run buildstream within a Docker image.
 
 The BuildStream project provides
-[Docker images](https://hub.docker.com/r/buildstream/buildstream-fedora)
+[Docker images](https://hub.docker.com/r/buildstream/buildstream)
 containing BuildStream and its dependencies.
 This gives you an easy way to get started using BuildStream on any Unix-like
 platform where Docker is available, including Mac OS X.
@@ -27,8 +27,8 @@ doesn't, you should edit your `~/.bashrc` so that it does:
 
 Once the script is available in your `PATH`, you can run `bst-here` to open a
 shell session inside a new container based off the latest version of the
-buildstream-fedora Docker image. The current working directory will be mounted
-inside the container at `/src`.
+`buildstream/buildstream` Docker image. The current working directory will be
+mounted inside the container at `/src`.
 
 You can also run individual BuildStream commands as `bst-here COMMAND`. For
 example: `bst-here show systems/my-system.bst`. Note that BuildStream won't
@@ -41,3 +41,14 @@ Two Docker volumes are set up by the `bst-here` script:
 
 These are necessary so that your BuildStream cache and configuration files
 persist between invocations of `bst-here`.
+
+By default, the `latest` tag of the `buildstream/buildstream` image will be
+used. This tag tracks the latest stable release of BuildStream. You can choose
+to use a different tag using the `-j` option.  For example, you can run the
+nightly build of BuildStream like so:
+
+    ::shell
+    bst-here -j nightly
+
+More details on image variants can be found
+[here](https://hub.docker.com/r/buildstream/buildstream).
