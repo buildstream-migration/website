@@ -19,5 +19,10 @@ reliably in the long term.
 New to BuildStream? Find out more in our
 [Frequently Asked Questions]({filename}faq.md) page.
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 [core plugins]: https://docs.buildstream.build/core_plugins.html
 [External plugins]: https://buildstream.gitlab.io/bst-external/
