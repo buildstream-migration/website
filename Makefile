@@ -53,7 +53,7 @@ endif
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-test:
+test: html
 	$(LINKCHECK) -P 127.0.0.1:8000
 
-.PHONY: html help clean regenerate serve publish
+.PHONY: html help clean regenerate serve publish test
