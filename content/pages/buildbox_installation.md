@@ -66,14 +66,14 @@ can't be guaranteed yet. The commit SHAs below have been tested with BuildStream
     :::shell
     git clone https://gitlab.com/BuildGrid/buildbox/buildbox-common.git
     cd buildbox-common
-    git checkout e2589e4b9f8ffa2bc183300c84cd1940d229fb38
+    git checkout 0.0.1
     cmake -DBUILD_TESTING=OFF -Bbuild
     make -C build
     make -C build install
 
     git clone https://gitlab.com/BuildGrid/buildbox/buildbox-casd.git
     cd buildbox-casd
-    git checkout dc59692877fcec86e520daa8725513efb93b331c
+    git checkout 0.0.1
     cmake -DBUILD_TESTING=OFF -Bbuild
     make -C build
     make -C build install
