@@ -290,7 +290,7 @@ You will have to restart your terminal in order for these changes to take effect
 
 ### Bash completions
 
-Bash completions are supported by sourcing the `buildstream/data/bst`
+Bash completions are supported by sourcing the `src/buildstream/data/bst`
 script found in the BuildStream repository. On many systems this script
 can be installed into a completions directory but when installing BuildStream
 without a package manager this is not an option.
