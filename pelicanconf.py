@@ -30,7 +30,7 @@ DEFAULT_PAGINATION = 10
 
 MENUITEMS = (
     ('About', 'about.html'),
-    ('Install', 'install.html'),
+    ('Install &#8599', 'https://docs.buildstream.build/1.4.1/main_install.html'),
     ('News', 'news.html'),
     ('Community', 'community.html'),
     ('FAQ', 'faq.html'),
