@@ -6,7 +6,7 @@ slug: about
 <!-- For the release badges, check https://gitlab.com/BuildStream/website/issues/3 -->
 
 <!-- Short explanation about what the BuildStream project ships (outcomes) and who they are for: snapshots, releases and master  -->
-The BuildStream project develops, delivers and maintains an integration toolset called BuildStream specially designed for software application developers and integrators of complex systems that follow modern delivery methodologies to ship software that should be in production for a long time. At the same time, as Free Software project, BuildStream ships versions of the tools set advancing the features that will be shipped in the future for those who want to evaluate where the toolset is heading or test them. Finally, BuildStream toolset development mostly takes place in the master branch of the buildstream repository, which the project refers to as Master.
+The BuildStream project develops, delivers and maintains an integration toolset called BuildStream specially designed for software application developers and integrators of complex systems. It follows modern delivery methodologies to ship software that should be in production for a long time. At the same time, as a Free Software project, BuildStream ships versions of the toolset which advance the features that will be shipped in the future for those who want to evaluate where the toolset is heading or test them. Finally, BuildStream toolset development mostly takes place in the master branch of the buildstream repository, which the project refers to as Master.
 
 We provide:
 
