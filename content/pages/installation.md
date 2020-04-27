@@ -28,7 +28,7 @@ BuildStream is available on a limited number of Linux distributions already:
 
 [![BuildStream](https://repology.org/badge/vertical-allrepos/buildstream.svg)](https://repology.org/metapackage/buildstream/versions)
 
-* BuilsStream external plugins (bst-external):
+* BuildStream external plugins (bst-external):
 
 [![BuildStream plugins](https://repology.org/badge/vertical-allrepos/bst-external.svg)](https://repology.org/metapackage/bst-external/versions)
 
