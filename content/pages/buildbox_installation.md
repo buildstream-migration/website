@@ -18,6 +18,11 @@ The tarball contains the binaries `buildbox-casd`, `buildbox-fuse`,
 `buildbox-run-bubblewrap` and the symlink `buildbox-run`, which should be
 extracted into a directory in `PATH`, e.g., `~/.local/bin`.
 
+#### Debian and Ubuntu
+    Most dependencies are staticly linked but buildbox needs fusermount3 from the fuse3 package to be installed
+    :::shell
+    sudo apt install fuse3
+
 ## Build from source
 
 ### Installing dependencies
